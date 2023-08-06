@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Jokenpô Game</title>
+</head>
+<body>
+    <header>
+        <h1>Pedra Papel Tesoura</h1>
+    </header>
+    
+    <main>
+        <div class="pontuacao">
+            <div class="pontuacao__jogador" id="user-label">Você</div>
+            <div class="pontuacao__jogador" id="computer-label">Comp</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+            
+        <div class="resultado">
+            <p>Para começar o jogo, escolha uma das opções:</p>
+        </div>
+
+        <div class="escolhas">
+            <div class="escolhas__selecionar" id="pedra">
+                <img src="/img/pedra.png" alt="imagem de uma mão simbolizando 'pedra' no jogo." width="100px">
+            </div>
+            <div class="escolhas__selecionar" id="papel">
+                <img src="/img/papel.png" alt="imagem de uma mão simbolizando 'papel' no jogo." width="100px">
+            </div>
+            <div class="escolhas__selecionar" id="tesoura">
+                <img src="/img/tesoura.png" alt="imagem de uma mão simbolizando 'tesoura' no jogo." width="100px">
+            </div>
+        </div>
+
+        <p class="mensagem" id="mensagem-acao">Faça sua jogada.</p>
+    </main>
+
+    <footer class="rodape">
+        <h2>Desenvolvido por Gustavo Henrique L. M. Sousa</h2>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

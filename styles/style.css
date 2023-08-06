@@ -1,0 +1,149 @@
+@import url('/styles/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+
+:root {
+    --cor-fundo-body: #292C34;
+    --cor-texto-body: white;
+
+    --cor-fundo-header: white;
+    --cor-texto-header: #25272E;
+
+    --cor-pontuacao: white;
+    --cor-pontuacao-jogador: #E2584D;
+
+    --cor-escolhas: white;
+    --cor-escolhas-hover: #212124;
+
+    --cor-vitoria: #4dcc7d;
+    --cor-derrota: #fc121b;
+    --cor-empate: #464647;
+
+    --cor-vitoria-shadow: #31b43a;
+    --cor-derrota-shadow: #d01115;
+    --cor-empate-shadow: #25292b;
+
+    --fonte-primaria: Asap, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-body);
+    color: var(--cor-texto-body);
+    font-family: var(--fonte-primaria);
+}
+
+header {
+    background-color: var(--cor-fundo-header);
+    padding: 1em;
+}
+
+header > h1 {
+    color: var(--cor-texto-header);
+    text-align: center;
+}
+
+/* Painel de Pontuação */
+
+.pontuacao {
+    border: 3px solid var(--cor-pontuacao);
+    border-radius: 4px;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+}
+
+.pontuacao__jogador {
+    background-color: var(--cor-pontuacao-jogador);
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.resultado {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Escolha sua ação */
+
+.escolhas {
+    margin-top: 3.2em;
+    text-align: center;
+}
+
+.escolhas__selecionar {
+    display: inline-block;
+    border: 4px solid var(--cor-escolhas);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.escolhas__selecionar:hover {
+    cursor: pointer;
+    background-color: var(--cor-escolhas-hover);
+}
+
+.mensagem {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1.2em;
+}
+
+/* Rodapé */
+
+.rodape {
+    font-size: 0.8em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Javascript */
+
+.brilho-verde {
+    border: 4px solid var(--cor-vitoria);
+    box-shadow: 0 0 10px var(--cor-vitoria-shadow);
+}
+
+.brilho-vermelho {
+    border: 4px solid var(--cor-derrota);
+    box-shadow: 0 0 10px var(--cor-derrota-shadow);
+}
+
+.brilho-cinza {
+    border: 4px solid var(--cor-empate);
+    box-shadow: 0 0 10px var(--cor-empate-shadow);
+}
+
+
+@media screen and (max-width: 500px) {
+    .resultado {
+        font-size: 2em;
+        margin: 1em;
+    }
+
+    .rodape {
+        font-size: 0.7em;
+        margin: 1em;
+    }
+}
+
