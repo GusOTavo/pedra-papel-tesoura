@@ -142,8 +142,9 @@ header > h1 {
     }
 
     .rodape {
-        font-size: 0.7em;
-        margin: 1em;
+        font-size: 0.5em;
+        margin: 3em 1em;
+        position: relative;
     }
 }
 
