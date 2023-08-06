@@ -50,7 +50,7 @@ function derrota(escolhaDoJogador, escolhaDoComputador) {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    resultado_div.innerHTML = `${converterLinguagem(escolhaDoJogador)}${nomePequenoJogador} foi derrotada por ${converterLinguagem(escolhaDoComputador)}${nomePequenoComp}. Você perdeu... :(`
+    resultado_div.innerHTML = `${converterLinguagem(escolhaDoJogador)}${nomePequenoJogador} foi derrotado por ${converterLinguagem(escolhaDoComputador)}${nomePequenoComp}. Você perdeu... :(`
 
     escolhaDoJogador_div.classList.add('brilho-vermelho');
     escolhaDoComputador_div.classList.add('brilho-verde');
